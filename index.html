@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hassen’s Minecraft 3D World</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Pixel Minecraft Font -->
+  <link href="https://fonts.cdnfonts.com/css/minecraftia" rel="stylesheet">
+
+  <style>
+    body {
+      background: url('https://static.planetminecraft.com/files/image/minecraft/texture-pack/2022/206/15445447-vanillagrass_l.jpg') repeat;
+      background-size: 200px;
+      font-family: 'Minecraftia', sans-serif;
+      color: #e7e5e5;
+    }
+    p {
+      color: #000;
+    }
+
+    nav.navbar {
+      background-color: #2d2d2d;
+      border-bottom: 4px solid #c4f1b7;
+    }
+
+    nav a.nav-link {
+      color: #fff !important;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-top: 50px;
+      text-shadow: 2px 2px #000;
+    }
+
+    .card {
+      background-color: #3a3a3a;
+      border: 4px solid #2e6e1f;
+      border-radius: 0;
+      box-shadow: 0 0 12px #000;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #5aff3d;
+    }
+
+    .carousel-inner img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-bottom: 4px solid #2e6e1f;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(1);
+    }
+
+    footer {
+      background-color: #222;
+      border-top: 4px solid #3c8527;
+      padding: 20px;
+      text-align: center;
+      color: #aaa;
+      margin-top: 60px;
+      font-size: 14px;
+      }
+
+      /* 🎥 Uniform video card design */
+.video-card {
+  background-color: #3a3a3a;
+  border: 4px solid #2e6e1f;
+  border-radius: 0;
+  box-shadow: 0 0 12px #000;
+  transition: transform 0.2s ease-in-out;
+}
+
+.video-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #5aff3d;
+}
+
+.video-wrapper {
+  width: 100%;
+  height: 250px; /* same as your image cards */
+  overflow: hidden;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-bottom: 4px solid #2e6e1f;
+}
+
+
+    
+  </style>
+</head>
+
+<body>
+
+  <!-- 🧭 Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand text-light" href="#">🧱 HassenCraft</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#models">Models</a></li>
+          <li class="nav-item"><a class="nav-link" href="#videos">Videos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🧊 Models Section -->
+  <section id="models" class="container">
+    <h2 class="section-title">🪓 3D Models</h2>
+    <div class="row g-4 mt-4">
+      
+      <!-- Model 1 -->
+      <div class="col-md-4">
+        <div class="card">
+          <div id="carouselModel1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Images/Epi/Main.png" class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Epi/EPI.png" class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Epi/EPI3.png" class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Epi/EPI2.png" class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Epi/EPI3.png" class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Epi/Epi1.png" class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Epi/Model.png" class="d-block w-100" >
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselModel1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselModel1" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body text-center">
+            <h5>Epi Model</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Model 2 -->
+      <div class="col-md-4">
+        <div class="card">
+          <div id="carouselModel2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Images/Kitchen/Kitchen.png" class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Kitchen/Koujina.png" class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Kitchen/Model.png" class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Kitchen/Model2.png" class="d-block w-100" >
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselModel2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselModel2" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body text-center">
+            <h5>Tunisian Kitchen</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Model 3 -->
+      <div class="col-md-4">
+        <div class="card">
+          <div id="carouselModel3" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Images/House/house.png" class="d-block w-100" alt="Model 3 - Angle 1">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/House/house2.png" class="d-block w-100" alt="Model 3 - Angle 2">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/House/house 3.png" class="d-block w-100" alt="Model 3 - Angle 3">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/House/Model 1.png" class="d-block w-100" alt="Model 3 - Angle 3">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/House/Model 2.png" class="d-block w-100" alt="Model 3 - Angle 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselModel3" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselModel3" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body text-center">
+            <h5>House Model</h5>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Model 4-->
+      <div class="col-md-4">
+        <div class="card">
+          <div id="carouselModel4" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Images/Carte mere/MAin.png" class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Carte mere/model 1.png" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Carte mere/model 2.png" class="d-block w-100">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselModel4" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselModel4" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body text-center">
+            <h5>Carte Mere Model</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Model 5-->
+      <div class="col-md-4">
+        <div class="card">
+          <div id="carouselModel5" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Images/Vape/Main.png" class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Vape/Model 1.png" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Vape/Model 2.png" class="d-block w-100">
+              </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselModel5" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselModel5" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body text-center">
+            <h5>Vape Store</h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <section id="models" class="container">
+    <h2 class="section-title">🪓 Characters </h2>
+    <div class="row g-4 mt-4">
+      
+      <!-- Model 6 -->
+      <div class="col-md-4">
+        <div class="card">
+          <div id="carouselModel6" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Images/Realistic h/Main.png" class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Realistic h/Main 1.png" class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Realistic h/Model.png" class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Realistic h/Model 1.png" class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Realistic h/Realistic.png" class="d-block w-100" >
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselModel6" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselModel6" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body text-center">
+            <h5>Realistic</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Model 7 -->
+      <div class="col-md-4">
+        <div class="card">
+          <div id="carouselModel7" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Images/Game h/mohcen4.png" class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Game h/mohcen2.png" class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Game h/mohcen3.png "class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Game h/Model.png"class="d-block w-100" >
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselModel7" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselModel7" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body text-center">
+            <h5>Game Character</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Model 8 -->
+      <div class="col-md-4">
+        <div class="card">
+          <div id="carouselModel8" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Images/Robot h/game.png" class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Robot h/Model.png "class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Robot h/Model 1.png" class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Robot h/Model 2.png" class="d-block w-100" >
+              </div>
+         
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselModel8" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselModel8" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body text-center">
+            <h5>Robot For Game</h5>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Model 9-->
+      <div class="col-md-4">
+        <div class="card">
+          <div id="carouselModel9" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Images/hIJAB H/Main.png" class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="Images/hIJAB H/Main2.png" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/hIJAB H/Model1.png" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/hIJAB H/Model2.png" class="d-block w-100">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselModel9" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselModel9" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body text-center">
+            <h5>Stylized Muslim Girl</h5>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- video sction -->
+<section id="videos" class="container my-5">
+  <h2 class="section-title text-center mb-4">🎬 Videos</h2>
+  <div class="row g-4">
+
+    <!-- Video 1 -->
+    <div class="col-md-4">
+      <div class="card video-card">
+        <div class="video-wrapper">
+          <video controls>
+            <source src="Videos/1.mkv" type="video/mp4">
+          </video>
+        </div>
+        <div class="card-body text-center">
+          <h5>Free Lance </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video 2 -->
+    <div class="col-md-4">
+      <div class="card video-card">
+        <div class="video-wrapper">
+          <video controls>
+            <source src="Videos/2.mkv" type="video/mp4">
+          </video>
+        </div>
+        <div class="card-body text-center">
+          <h5>Character Animation</h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video 3 -->
+    <div class="col-md-4">
+      <div class="card video-card">
+        <div class="video-wrapper">
+          <video controls>
+            <source src="Videos/3.mkv" type="video/mp4">
+          </video>
+        </div>
+        <div class="card-body text-center">
+          <h5>Free Lance</h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video 4 -->
+    <div class="col-md-4">
+      <div class="card video-card">
+        <div class="video-wrapper">
+          <video controls>
+            <source src="Videos/4.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="card-body text-center">
+          <h5>Vape Store</h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video 5 -->
+    <div class="col-md-4">
+      <div class="card video-card">
+        <div class="video-wrapper">
+          <video controls>
+            <source src="Videos/5.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="card-body text-center">
+          <h5>Me</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Video 6 -->
+    <div class="col-md-4">
+      <div class="card video-card">
+        <div class="video-wrapper">
+          <video controls>
+            <source src="Videos/6.mkv" type="video/mp4">
+          </video>
+        </div>
+        <div class="card-body text-center">
+          <h5>Carte Mere</h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- video 7  -->
+    <div class="col-md-4">
+      <div class="card video-card">
+        <div class="video-wrapper">
+          <video controls>
+            <source src="Videos/7.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="card-body text-center">
+          <h5>Free Lance Clothes</h5>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- ℹ️ About Section -->
+  <section id="about" class="container">
+    <h2 class="section-title">💬 About Me</h2>
+    <p class="text-center mt-4">
+      I'm Hassen — a 3D artist, game developer, and Minecraft fan.  
+      This world is built block by block with my creations, animations, and renders.  
+      Stay tuned for more models, videos, and interactive experiences.
+    </p>
+  </section>
+
+  <footer>
+    © 2025 HassenCraft | Built with Bootstrap + Minecraft vibes 🧱
+  </footer>
+
+</body>
+</html>
